@@ -60,7 +60,6 @@ jobs:
           body: ${{ steps.create_changelog.outputs.content }}
           tag_name: ${{ steps.create_changelog.outputs.version }}
           files: |
-            postgrestools_*
             docs/schemas/latest/schema.json
           fail_on_unmatched_files: true
           draft: true
